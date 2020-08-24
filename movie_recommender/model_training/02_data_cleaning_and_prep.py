@@ -299,7 +299,7 @@ metadata['all_text_metadata'] = (metadata['genres_list']
                                      + metadata['collection_list_filledna']
                                  )
 
-# convert into string of words, with underscores going compoubd words
+# convert into string of words, with underscores going compound words
 metadata['all_text_metadata'] = metadata['all_text_metadata'].apply(lambda x: ' '.join([i.replace(' ', '_') for i in x]))
 
 # metadata.head()
